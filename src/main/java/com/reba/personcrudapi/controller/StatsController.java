@@ -36,7 +36,7 @@ public class StatsController {
         if (peopleCount != 0) {
             var peopleByCountry = people.stream().collect(Collectors.groupingBy(Person::getCountry));
             peopleByCountry.forEach((k,v) ->
-                    stats.add(StatsDto.builder().country(k).percentage(decimalFormat.format((double) v.size() * 100 / people.size())).build()));
+                    stats.add(StatsDto.builder().country(k).percentage(decimalFormat.format((double) v.size() * 100 / peopleCount)).build()));
         }
 
         return ResponseEntity.ok(stats);
