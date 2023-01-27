@@ -37,7 +37,6 @@ In order to run this server you will need the following:
     ```bash
     $ docker-compose up
     ```
-
 ### usage
 
 1. Now open a web browser and go to http://localhost:8080/api/swagger-ui.html
@@ -45,6 +44,13 @@ In order to run this server you will need the following:
 2. Play around with swagger ui by doing requests to the rest api endpoints:
 
 ![playground](https://i.imgur.com/8zyMGMy.png)
+
+* __Deployed instance at Amazon AWS__:
+
+    * API: http://ec2-18-224-31-39.us-east-2.compute.amazonaws.com/api
+    
+    * Swagger UI playground: http://ec2-18-224-31-39.us-east-2.compute.amazonaws.com/api/swagger-ui.html
+
 
 ### performance test
 
@@ -68,8 +74,8 @@ In order to run this server you will need the following:
 * Swagger
 * Gatling
 * Lombok
+* Amazon AWS
+* Nginx
 
 ##### pending items:
 * unit-tests with JUnit and Mockito
-
-##### pending idea:
