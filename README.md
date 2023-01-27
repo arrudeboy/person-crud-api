@@ -23,19 +23,19 @@ In order to run this server you will need the following:
 
 1. Build the project package by typing the following in a command line:
     ```bash
-    $ mvn clean package
+    mvn clean package
     ```
 
 2. Copy the .jar file located at target folder to src/main/docker folder:
 
     ```bash
-    $ cp target/person-crud-api-0.0.1-SNAPSHOT.jar src/main/docker
+    cp target/person-crud-api-0.0.1-SNAPSHOT.jar src/main/docker
     ```
     
 2. Go to src/main/docker folder and use docker-compose tool to build the services (app and db) by typing:
 
     ```bash
-    $ docker-compose up
+    docker-compose up
     ```
 ### usage
 
@@ -56,7 +56,7 @@ In order to run this server you will need the following:
 
 * Run performance tests by typing the following command in a terminal:
      ```bash
-     $ mvn clean gatling:test
+     mvn clean gatling:test
      ```
 
 * Command output details the test results. Also, check the link above in order to see test results as charts:
